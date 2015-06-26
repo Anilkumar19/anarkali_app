@@ -1,17 +1,19 @@
-
-<table>
+<div class="container">
+ <table class="table table-hover">
 	<tr>
-		<th colspan="" rowspan="" headers="" scope="">Desiger Brand Name</th>
-		<th colspan="" rowspan="" headers="" scope="">Number Of Designs</th>
+		<th>Desiger Brand Name</th>
+		<th>Number Of Designs</th>
 	</tr>
 	
 	<% @brands.each do |brand| %>
 		<tr>
-			<td colspan="" rowspan="" headers=""><%= brand[:brand_name] %></td>
-			<td colspan="" rowspan="" headers=""><%= brand[:no_of_designs] %></td>
+			<td><%= brand[:brand_name] %></td>
+			<td><%= brand[:no_of_designs] %></td>
 		</tr>
   <% end %>
-</table>
+ </table>
+
 <br/>
 <br/>
 <%= link_to "Refresh", mirraws_designs_path %>
+</div>
