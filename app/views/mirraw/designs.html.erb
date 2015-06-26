@@ -1,0 +1,14 @@
+
+<table>
+	<tr>
+		<th colspan="" rowspan="" headers="" scope="">Desiger Brand Name</th>
+		<th colspan="" rowspan="" headers="" scope="">Number Of Designs</th>
+	</tr>
+	
+	<% @brands.each do |brand| %>
+		<tr>
+			<td colspan="" rowspan="" headers=""><%= brand[:brand_name] %></td>
+			<td colspan="" rowspan="" headers=""><%= brand[:no_of_designs] %></td>
+		</tr>
+  <% end %>
+</table>
